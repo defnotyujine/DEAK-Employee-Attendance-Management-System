@@ -1,0 +1,443 @@
+nav{
+    background-image: linear-gradient(to bottom, black, rgb(20,30,40));
+    box-shadow: 1px 1px 20px rgb(10,10,10);
+    position: relative;
+    font-weight: 500;
+}
+
+main{
+    background-image: linear-gradient(to bottom, black, rgb(20,30,40));
+}
+
+/*login.php*/
+.mainLogin{
+    height: 100%;
+    background-image: linear-gradient(to bottom, black, rgb(20,30,40));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.empLoginButtonContainer, .adminLoginButtonContainer{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.mainLoginForm{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(35,45,55);
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 1px 1px 20px rgb(10,10,10);
+}
+.loginForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.loginForm span{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.loginForm input{
+    margin: 0px 15px 15px 15px;
+    width: 75%;
+}
+.loginForm div{
+    margin: 10px 0 0 0;
+}
+
+
+/*employeeLogin.php*/
+.timeOut{
+    background-color: red;
+}
+
+
+/*dashboard.php*/
+.row-2{
+    height: 700px;
+}
+
+.dataCountContainer{
+    display: flex;
+    flex-direction: row;
+    height: 120px;
+    width: 100%;
+    margin: 10px;
+}
+.dataCount{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(10,20,30);
+    border: 1px solid black;
+    box-shadow: 5px 10px 20px black;
+    border-radius: 5px;
+    height: 100px;
+    width: 200px;
+    padding: 5px;
+    margin: 23px;
+    font-weight: 700;
+    color: white;
+}
+#dataCountE{
+    border-top: 5px solid rgb(133, 7, 9);
+}
+#dataCountD{
+    border-top: 5px solid rgb(28, 2, 120);
+}
+#dataCountS{
+    border-top: 5px solid rgb(50, 3, 69);
+}
+#dataCountA{
+    border-top: 5px solid green;
+}
+.dataCount i{
+    color: rgb(200, 200, 200);
+}
+.tableContainer{
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    width: 100%;
+    color: white;
+    margin: 10px;
+}
+.tableForDeptEmps,.tableForEmpForShift{
+    padding: 25px;
+    border-radius: 10px;
+    height: 50vh;
+    width: 60vh;
+    margin: 15px;
+    font-size: 18px;
+    background-color: rgb(10,20,30);
+    box-shadow: 1px 10px 20px black;
+}
+.tableContainer h6{
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+    color: white;
+}
+.tableForDeptEmps, .tableForEmpForShift{
+    overflow: auto;
+}
+.dashboardTable{
+    width: 50vh;
+    overflow: auto;
+}
+.nav-item-sign-out{
+    position: absolute;
+    right: 10px;
+}
+
+/*clock*/
+#clockContainer{
+    margin: 10px 100px 10px 100px;
+}
+#clock{
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: rgb(10,20,30);
+    box-shadow: 1px 5px 10px black;
+}
+.number{
+    position: absolute;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+}
+.number-12{
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.number-3{
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+.number-6{
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.number-9{
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+#hour-hand{
+    width: 6px;
+    height: 60px;
+    margin-left: -3px;
+    margin-top: -60px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: bottom center;
+    transform: translateX(-50%) rotate(0deg);
+    z-index: 1;
+}
+#minute-hand{
+    width: 4px;
+    height: 90px;
+    margin-left: -2px;
+    margin-top: -90px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: bottom center;
+    transform: translateX(-50%) rotate(0deg);
+    z-index: 2;
+}
+#second-hand{
+    width: 2px;
+    height: 100px;
+    margin-left: -1px;
+    margin-top: -100px;
+    background-color: rgb(133, 7, 9);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: bottom center;
+    transform: translateX(-50%) rotate(0deg);
+    z-index: 3;
+}
+
+/*calendar*/
+.calendar-container{
+    width: 360px;
+    margin: 150px 50px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgb(10,20,30);
+    box-shadow: 1px 5px 10px black;
+}
+.calendar-header{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.calendar{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+.day{
+    text-align: center;
+    padding: 5px;
+    background-color: rgb(20,30,40);
+    border-radius: 5px;
+    font-size: 14px;
+}
+.current-day{
+    background-color: rgb(133, 7, 9);
+    color: #fff;
+}
+
+/*Employees.php*/
+.employeesMain h4{
+    color: white;
+    margin: 25px 15px;
+}
+.employeesMain, .deptMain{
+    background-image: linear-gradient(to bottom, black, rgb(20,30,40));
+    height: 800px;
+    padding: 15px;
+}
+.employeesTable, .deptTable{
+    padding: 15px;
+    background-color: rgb(35,45,55);
+    border-radius: 10px;
+    max-height: 700px;
+    overflow: auto;
+}
+table{
+    color: white;
+    border: solid 1px black;
+    width: 100%;
+}
+
+th,tr,td{
+    padding: 15px;
+    text-align: center;
+}
+th{
+    background-color: rgb(10,20,30);
+    border: solid 1px black;
+}
+td{
+    background-color: rgb(30,40,50);
+}
+td:nth-child(even){
+    background-color: rgb(35,45,55);
+}
+input{
+    padding: 7px;
+    border-radius: 3px;
+    border: none;
+}
+input:focus{
+    outline: none;
+}
+button{
+    padding: 7px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    transition: opacity 0.25s;
+}
+button:hover{
+    opacity: 75%;
+}
+button:focus{
+    outline: none;
+}
+i{
+    margin: 0 5px 0 0;
+}
+.employeeImage{
+    width: 40px;
+    border: 1px solid black;
+}
+.operationsTd{
+    display: flex;
+    justify-content: space-evenly;
+}
+td a{
+    color: gray;
+}
+td a:hover{
+    color: white;
+}
+
+/*addEmployee.php*/
+.addEmployeeMain h4{
+    color: white;
+    margin: 25px 15px;
+}
+.formTitle{
+    display: flex;
+    align-items: center;
+}
+.formTitle form{
+    height: 50%;
+    margin: 0 10px 0 10px;
+}
+.formTitle button{
+    background-color: rgb(90,100,110);
+    border-radius: 3px;
+}
+.addEmployeeMain{
+    background-image: linear-gradient(to bottom, black, rgb(20,30,40));
+    height: 1000px;
+    padding: 15px;
+}
+.addEmployeeForm, .addDeptForm, .addShiftForm{
+    padding: 15px;
+    background-color: rgb(35,45,55);
+    border-radius: 10px;
+    color: white;
+    width: 50%;
+}
+.addEmployeeForm form{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.addDeptForm form{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    position: relative;
+}
+.addShiftForm form{
+    display: flex;
+    justify-content: left;
+    position: relative;
+    padding: 0 0 20px 0;
+    margin: 0 0 0 12px;
+}
+.addEmployeeForm label, .addDeptForm label, .addShiftForm label{
+    margin: 0;
+}
+.addEmployeeForm input{
+    margin: 20px;
+    width: 60%;
+}
+.addDeptForm input{
+    margin: 20px;
+    width: 80%;
+}
+.addShiftForm input{
+    margin: 20px;
+    width: auto;
+}
+.addEmployeeForm input:focus, .addDeptForm input:focus, .addShiftForm input:focus{
+    box-shadow: 0 0 15px 10px rgb(10,20,30);
+}
+.addEmployeeForm input[type=file]:focus{
+    box-shadow: none;
+}
+
+.addEmployeeForm button, .addDeptForm button{
+    position: absolute;
+    right: 10px;
+    bottom: -10px;
+}
+
+.addShiftForm button{
+    position: absolute;
+    right: 10px;
+    bottom: 0px;
+}
+select{
+    margin: 20px;
+    padding: 7px;
+    border-radius: 3px;
+    border: none;
+}
+select:focus {
+    outline: none;
+    box-shadow: 0 0 15px 10px rgb(10,20,30);
+}
+hr{
+    border: 1px solid rgb(90,100,110);
+    width: 100%;
+}
+.toPDFButton, .clearAll{
+    background-color: rgb(133, 7, 9);
+}
+.warningP{
+    color: red;
+    font-size: 8px;
+}
+
+.attendanceForm{
+    position: relative;
+}
+.clearAll{
+    position: absolute;
+    right: 1px;
+}
